@@ -22,4 +22,14 @@ const timerInterval = setInterval(updateTimer, 1000);
 
 setTime();
 
+var startButton = document.querySelector(".btn");
+
+startButton.addEventListener("click", function () {
+    var startScreen = document.querySelector(".start-screen");
+    startScreen.style.display = "none";
+    var firstQuestion = document.querySelector(".first-question");
+    firstQuestion.style.display = "block"; 
+});
+
+
 
