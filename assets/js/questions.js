@@ -12,8 +12,8 @@ var questions = [
         correctIndex: 3,
     },
     {
-        question: "Arrays in JavaScript can be used to store ________. ",
-        choices: ["number and strings", "booleans", "other arrays", "all of the above"],
+        question: "Arrays in JavaScript can be used to store ________.",
+        choices: ["numbers and strings", "booleans", "other arrays", "all of the above"],
         correctIndex: 3,
     },
     {
