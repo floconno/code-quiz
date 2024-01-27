@@ -26,7 +26,7 @@ p {
     background-color: #381C99;
     font-size: 18px;
     padding: 5px 16px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: white;
     border: none;
 }
@@ -52,14 +52,12 @@ p {
     color: #8A2BE2; 
 }
 
-
-
 .btn {
     display: block;
     background-color: #381C99;
     font-size: 18px;
     padding: 5px 16px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: white;
     border: none;
     margin-top: 5px;
@@ -71,3 +69,11 @@ p {
     text-align: left;
 }
 
+#sub-btn {
+    background-color: #381C99;
+    font-size: 15px;
+    padding: 2px 14px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
