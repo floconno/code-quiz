@@ -1,4 +1,4 @@
-var timeEl = document.querySelector(".time");
+var timeEl = document.getElementById("time");
 var mainEl = document.getElementById("main");
 
 let timeLeft = 90;

@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 60vh;
 }
 
 header {
@@ -28,4 +28,27 @@ p {
     padding: 5px 16px;
     border-radius: 8px;
     color: white;
+    border: none;
 }
+
+#time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.hs-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    border: none;
+    background-color: white;
+    color: #8A2BE2; 
+}
+
