@@ -22,7 +22,7 @@ p {
     margin-top: 20px;
 }
 
-.btn {
+.start-btn {
     background-color: #381C99;
     font-size: 18px;
     padding: 5px 16px;
@@ -50,5 +50,24 @@ p {
     border: none;
     background-color: white;
     color: #8A2BE2; 
+}
+
+
+
+.btn {
+    display: block;
+    background-color: #381C99;
+    font-size: 18px;
+    padding: 5px 16px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin-top: 5px;
+    width: 220px;
+    text-align: left;
+}
+
+.end-quiz header {
+    text-align: left;
 }
 
