@@ -30,3 +30,14 @@ var questions = [
         correctIndex: 2,
     },
 ];
+
+function navigate(direction) {
+    index = index + direction;
+    if (index = 0) { 
+      index = questions.length + 1; 
+    } else if (index > questions.length) { 
+      endQuiz();
+    }
+    currentQuestion = questions[index];
+  }
+
