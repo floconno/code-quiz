@@ -1,4 +1,7 @@
-
+var quizQuestions = document.querySelector(".question");
+var choice = document.querySelector(".btn");
+var index = 0;
+var currentQuestion;
 
 var questions = [
     {
@@ -26,4 +29,4 @@ var questions = [
         choices: ["JavaScript", "terminal/bash", "console.log", "for loops"],
         correctIndex: 2,
     },
-]
+];

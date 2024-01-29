@@ -1,35 +1,44 @@
-var timeEl = document.getElementById("time");
-var mainEl = document.getElementById("main");
 
-let timeLeft = 90;
+var timeEl = document.querySelector(".timer");
+var startButton = document.querySelector(".start-button");
+
+var timeLeft = 90;
 
 function updateTimer() {
-  timeLeft--;
 
-  if (timeLeft <= 0) {
-    clearInterval(timerInterval);
-    endQuiz();
-  }
+  var timerInterval = setInterval(function() {
+    timeLeft--;
+    timeEl.textContent = "Time: " + timeLeft;
+
+    if (questions !== correctIndex) {
+      timeLeft -= 5;
+    }
+
+    if (timeLeft === 0) {
+      clearInterval(timerInterval);
+      endQuiz();
+    }
+
+  }, 1000);
+
 };
 
-function deductTime() {
-  if (questions !== correctIndex) {
-    timeLeft -= 5;
-  }
-};
+updateTimer();
 
-const timerInterval = setInterval(updateTimer, 1000);
+startButton.addEventListener('click', updateTimer);
 
-setTime();
 
-var startButton = document.querySelector(".btn");
 
-startButton.addEventListener("click", function () {
-    var startScreen = document.querySelector(".start-screen");
-    startScreen.style.display = "none";
-    var firstQuestion = document.querySelector(".first-question");
-    firstQuestion.style.display = "block"; 
-});
+
+
+// var startButton = document.querySelector(".btn");
+
+// startButton.addEventListener("click", function () {
+//     var startScreen = document.querySelector(".start-screen");
+//     startScreen.style.display = "none";
+//     var firstQuestion = document.querySelector(".first-question");
+//     firstQuestion.style.display = "block"; 
+// });
 
 
 
