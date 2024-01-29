@@ -41,3 +41,7 @@ function navigate(direction) {
     currentQuestion = questions[index];
   }
 
+choice.addEventListener("click", function(event) {
+    event.stopPropagation();
+    navigate(1);
+});
