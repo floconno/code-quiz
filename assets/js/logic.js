@@ -10,7 +10,7 @@ function updateTimer() {
     timeLeft--;
     timeEl.textContent = "Time: " + timeLeft;
 
-    if (questions !== correctIndex) {
+    if (questions !== correctAnswer) {
       timeLeft -= 5;
     }
 
@@ -26,7 +26,6 @@ function updateTimer() {
 updateTimer();
 
 startButton.addEventListener('click', updateTimer);
-
 
 
 
