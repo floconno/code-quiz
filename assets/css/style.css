@@ -52,6 +52,10 @@ p {
     color: #8A2BE2; 
 }
 
+.questions header {
+    text-align: left; 
+}
+
 .btn {
     display: block;
     background-color: #381C99;
