@@ -1,6 +1,7 @@
 
 var quizQuestions = document.querySelector(".question");
 var choice = document.querySelectorAll(".btn");
+var currentQuestionIndex = 0;
 var index = 0;
 var currentQuestion;
 var correctAnswer;
@@ -48,20 +49,48 @@ document.addEventListener('DOMContentLoaded', function () {
 
         questions[index].style.display = 'block';
     }
-})
 
+    function nextQuestion() {
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            showQuestion(currentQuestionIndex);
+        };
+    };
 
-function navigate(direction) {
-    index = index + direction;
-    if (index = 0) { 
-      index = questions.length + 1; 
-    } else if (index > questions.length) { 
-      endQuiz();
-    }
-    currentQuestion = questions[index];
-  }
-
-choice.addEventListener("click", function(event) {
-    event.stopPropagation();
-    navigate(1);
+    choice.forEach(button => {
+        button.addEventListener("click", function() {
+    
+    
+            nextQuestion();
+        });
+    });
 });
+
+// function nextQuestion() {
+//     if (currentQuestionIndex < questions.length - 1) {
+//         currentQuestionIndex++;
+//         showQuestion(currentQuestionIndex);
+//     };
+// };
+
+// function navigate(direction) {
+//     index = index + direction;
+//     if (index = 0) { 
+//       index = questions.length + 1; 
+//     } else if (index > questions.length) { 
+//       endQuiz();
+//     }
+//     currentQuestion = questions[index];
+//   }
+
+// choice.forEach(button => {
+//     button.addEventListener("click", function() {
+
+
+//         nextQuestion();
+//     });
+// });
+// choice.addEventListener("click", function(event) {
+//     event.stopPropagation();
+//     navigate(1);
+// });
