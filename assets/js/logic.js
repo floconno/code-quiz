@@ -25,8 +25,6 @@ function updateTimer() {
 
 updateTimer();
 
-startButton.addEventListener('click', updateTimer);
-
 startButton.addEventListener("click", function () {
     var quizIntro = document.querySelector(".quiz-intro");
     quizIntro.style.display = "none";

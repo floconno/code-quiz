@@ -5,6 +5,7 @@ var currentQuestionIndex = 0;
 var index = 0;
 var currentQuestion;
 var correctAnswer;
+var endQuiz = document.querySelector(".end-quiz");
 
 var questions = [
     {
@@ -44,23 +45,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showQuestion(index) {
         questions.forEach(question => {
-            question.style.display = 'none';
+            question.style.display = "none";
         });
 
-        questions[index].style.display = 'block';
+        questions[index].style.display = "block";
     }
 
     function nextQuestion() {
         if (currentQuestionIndex < questions.length - 1) {
             currentQuestionIndex++;
             showQuestion(currentQuestionIndex);
+        } else {
+            quizEnd();
+        }
         };
+
+    function quizEnd() {
+        questions.forEach(question => {
+            question.style.display = "none";
+        });
+
+        endQuiz.style.display = "block";
     };
 
     choice.forEach(button => {
         button.addEventListener("click", function() {
-    
-    
+
             nextQuestion();
         });
     });
