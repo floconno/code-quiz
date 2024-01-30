@@ -57,8 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             showQuestion(currentQuestionIndex);
         } else {
             quizEnd();
-        }
-        };
+        }};
 
     function quizEnd() {
         questions.forEach(question => {
@@ -74,33 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
             nextQuestion();
         });
     });
+
 });
 
-// function nextQuestion() {
-//     if (currentQuestionIndex < questions.length - 1) {
-//         currentQuestionIndex++;
-//         showQuestion(currentQuestionIndex);
-//     };
-// };
-
-// function navigate(direction) {
-//     index = index + direction;
-//     if (index = 0) { 
-//       index = questions.length + 1; 
-//     } else if (index > questions.length) { 
-//       endQuiz();
-//     }
-//     currentQuestion = questions[index];
-//   }
-
-// choice.forEach(button => {
-//     button.addEventListener("click", function() {
-
-
-//         nextQuestion();
-//     });
-// });
-// choice.addEventListener("click", function(event) {
-//     event.stopPropagation();
-//     navigate(1);
-// });

@@ -81,3 +81,24 @@ p {
     color: white;
     border: none;
 }
+
+.high-scores h1 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.end-btn {
+    background-color: #381C99;
+    font-size: 15px;
+    padding: 2px 14px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    margin-right: 5px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+

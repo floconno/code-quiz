@@ -14,10 +14,10 @@ function updateTimer() {
     //   timeLeft -= 5;
     // }
 
-    if (timeLeft === 0) {
-      clearInterval(timerInterval);
-      endQuiz();
-    }
+    // if (timeLeft === 0) {
+    //   clearInterval(timerInterval);
+    //   quizEnd();
+    // }
 
   }, 1000);
 
