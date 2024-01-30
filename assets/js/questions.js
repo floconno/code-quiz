@@ -1,6 +1,6 @@
 
 var quizQuestions = document.querySelector(".question");
-var choice = document.querySelector(".btn");
+var choice = document.querySelectorAll(".btn");
 var index = 0;
 var currentQuestion;
 var correctAnswer;
@@ -34,6 +34,21 @@ var questions = [
 ];
 
 correctAnswer = questions[index].answer;
+
+document.addEventListener('DOMContentLoaded', function () {
+    var questionsContainer = document.querySelector(".questions-container");
+    var questions = document.querySelectorAll(".question");
+
+    var currentQuestionIndex = 0;
+
+    function showQuestion(index) {
+        questions.forEach(question => {
+            question.style.display = 'none';
+        });
+
+        questions[index].style.display = 'block';
+    }
+})
 
 
 function navigate(direction) {
