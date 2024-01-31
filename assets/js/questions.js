@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var questionsContainer = document.querySelector(".questions-container");
     var questions = document.querySelectorAll(".question");
 
-    var currentQuestionIndex = 0;
+    currentQuestionIndex = 0;
 
     function showQuestion(index) {
         questions.forEach(question => {
@@ -67,12 +67,18 @@ document.addEventListener('DOMContentLoaded', function () {
         endQuiz.style.display = "block";
     };
 
-    choice.forEach(button => {
-        button.addEventListener("click", function() {
-
+    for (var i = 0; i < choice.length; i++) {
+        choice[i].addEventListener("click", function() {
             nextQuestion();
         });
-    });
+    };
+
+    // choice.forEach(button => {
+    //     button.addEventListener("click", function() {
+            
+    //         nextQuestion();
+    //     });
+    // });
 
 });
 
