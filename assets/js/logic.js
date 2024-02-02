@@ -16,13 +16,15 @@ startButton.addEventListener("click", function () {
 function updateTimer() {
 
   var timerInterval = setInterval(function() {
-    timeLeft--;
+    // timeLeft--;
     
     timeEl.textContent = "Time: " + timeLeft;
 
-    if (choice[currentQuestionIndex].value !== questions[currentQuestionIndex].answer.toString()) {
+    if ((choice[currentQuestionIndex].value !== questions[currentQuestionIndex].answer)) {
       timeLeft -= 5;
-    }
+    } else {
+      timeLeft -= 1;
+    };
 
     if (timeLeft === 0) {
       clearInterval(timerInterval);
