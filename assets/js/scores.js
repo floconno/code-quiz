@@ -1,15 +1,13 @@
-var initialInput = document.querySelector("#init");
-var submitButton = document.querySelector("#sub-btn");
-
-
-submitButton.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    var initials = initialInput.value;
-
-    localStorage.setItem("initals", initials);
+var scores = document.querySelector("#scores");
+var highScores = JSON.parse(localStorage.getItem("scores")) || [];
+console.log(highScores);
+for (let index = 0; index < highScores.length; index++) {
+    var html = `score:${highScores[index].score} initial:${highScores[index].initials}`
+    scores.insertAdjacentHTML("beforeend", html);
     
-});
+    
+}
+
 
 
 
