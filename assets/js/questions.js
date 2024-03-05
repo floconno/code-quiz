@@ -133,4 +133,6 @@ function updateTimer() {
 
 };
 
-
+// TODO: go back button on hs page needs to go back to quiz, clear highscores needs to clear highscores from page/local storage,
+// add message when question is answered right or wrong, timer needs to stop after last question is answered, style highscores
+// add functionality to view highscores button
