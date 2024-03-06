@@ -12,6 +12,11 @@ backButton.addEventListener("click", function () {
     window.location.assign("/index.html");
 });
 
+var clearButton = document.querySelector('#clear-hs');
+
+clearButton.addEventListener("click", function () {
+    localStorage.clear();
+})
 
 
 
