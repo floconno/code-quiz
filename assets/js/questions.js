@@ -93,14 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
             nextQuestion();
         });
     };
-
-    // choice.forEach(button => {
-    //     button.addEventListener("click", function() {
-
-    //         nextQuestion();
-    //     });
-    // });
-
 });
 
 var timeEl = document.querySelector(".timer");
@@ -133,6 +125,15 @@ function updateTimer() {
 
 };
 
+
 // TODO: go back button on hs page needs to go back to quiz, clear highscores needs to clear highscores from page/local storage,
 // add message when question is answered right or wrong, timer needs to stop after last question is answered, style highscores
 // add functionality to view highscores button
+
+var viewHSButton = document.querySelector('#view-hs');
+
+viewHSButton.addEventListener("click", function () {
+    window.location.assign("/highscores.html");
+});
+
+
