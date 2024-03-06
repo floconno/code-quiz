@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 highScores.push(playerScore);
                 localStorage.setItem("scores", JSON.stringify(highScores));
                 
-                window.location.href('highscores.html');
+                window.location.href = highscores.html;
             });
         });
 
@@ -133,5 +133,5 @@ function updateTimer() {
 var viewHSButton = document.querySelector('#view-hs');
 
 viewHSButton.addEventListener("click", function () {
-    window.location.href('highscores.html');
+    window.location.href = highscores.html;
 });
