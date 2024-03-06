@@ -116,19 +116,22 @@ function updateTimer() {
 
         timeEl.textContent = "Time: " + timeLeft;
 
+        if (currentQuestionIndex === questions.length - 1) {
+            clearInterval(timerInterval);
+        }
+
         if (timeLeft === 0) {
             clearInterval(timerInterval);
             quizEnd();
         }
-
+        
     }, 1000);
 
 };
 
 
-// TODO: go back button on hs page needs to go back to quiz, clear highscores needs to clear highscores from page/local storage,
+// TODO:
 // add message when question is answered right or wrong, timer needs to stop after last question is answered, style highscores
-// add functionality to view highscores button
 
 var viewHSButton = document.querySelector('#view-hs');
 
