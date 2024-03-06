@@ -124,19 +124,14 @@ function updateTimer() {
             clearInterval(timerInterval);
             quizEnd();
         }
-        
+
     }, 1000);
 
 };
 
-
-// TODO:
-// add message when question is answered right or wrong, timer needs to stop after last question is answered, style highscores
 
 var viewHSButton = document.querySelector('#view-hs');
 
 viewHSButton.addEventListener("click", function () {
     window.location.assign("/highscores.html");
 });
-
-

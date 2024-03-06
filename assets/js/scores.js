@@ -1,8 +1,8 @@
 var scores = document.querySelector("#scores");
 var highScores = JSON.parse(localStorage.getItem("scores")) || [];
 console.log(highScores);
-for (let index = 0; index < highScores.length; index++) {
-    var html = `score:${highScores[index].score} initial:${highScores[index].initials}`
+for (let i = 0; i < highScores.length; i++) {
+    var html = `Player: ${highScores[i].initials} score:${highScores[i].score} `
     scores.insertAdjacentHTML("beforeend", html);
 };
 
@@ -16,7 +16,7 @@ var clearButton = document.querySelector('#clear-hs');
 
 clearButton.addEventListener("click", function () {
     localStorage.clear();
-})
+});
 
 
 
