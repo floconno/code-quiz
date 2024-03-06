@@ -9,7 +9,7 @@ var endQuiz = document.querySelector(".end-quiz");
 var initialInput = document.querySelector("#init");
 var submitButton = document.querySelector("#sub-btn");
 var highScores = JSON.parse(localStorage.getItem("scores")) || [];
-var hsPage = "highscores.html"
+var hsPage = "https://floconno.github.io/code-quiz/highscores.html" 
 
 var questions = [
     {
