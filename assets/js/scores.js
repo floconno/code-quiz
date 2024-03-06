@@ -9,7 +9,7 @@ for (let i = 0; i < highScores.length; i++) {
 var backButton = document.querySelector('#go-back');
 
 backButton.addEventListener("click", function () {
-    window.location.assign("/index.html");
+    window.location.href('index.html');
 });
 
 var clearButton = document.querySelector('#clear-hs');
