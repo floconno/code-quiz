@@ -9,6 +9,7 @@ var endQuiz = document.querySelector(".end-quiz");
 var initialInput = document.querySelector("#init");
 var submitButton = document.querySelector("#sub-btn");
 var highScores = JSON.parse(localStorage.getItem("scores")) || [];
+var hsPage = "highscores.html"
 
 var questions = [
     {
@@ -81,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 highScores.push(playerScore);
                 localStorage.setItem("scores", JSON.stringify(highScores));
                 
-                window.location.href = "/highscores.html";
+                window.location.href = hsPage;
             });
         });
 
@@ -133,5 +134,5 @@ function updateTimer() {
 var viewHSButton = document.querySelector('#view-hs');
 
 viewHSButton.addEventListener("click", function () {
-    window.location.href = "/highscores.html";
+    window.location.href = hsPage;
 });
